@@ -19,9 +19,12 @@ Etapas do Processo:
 
     Preparação dos dados:
         Os dados categóricos de profissão, mix_credito e comportamento_pagamento são convertidos para valores numéricos usando LabelEncoder.
+        
     Treinamento dos Modelos:
         Dois modelos são treinados: Random Forest e K-Nearest Neighbors.
+        
     Avaliação dos Modelos:
         A acurácia de cada modelo é comparada usando o conjunto de teste.
+        
     Previsão de Novos Scores:
         O modelo selecionado faz previsões para novos clientes com base em dados fornecidos.
