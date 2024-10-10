@@ -1,59 +1,27 @@
-Este projeto utiliza algoritmos de inteligência artificial para prever o score de crédito de clientes com base em variáveis como profissão, mix de crédito e comportamento de pagamento. Através de dois modelos de IA – Random Forest e KNN – foram treinados para identificar padrões nos dados e gerar previsões precisas sobre o perfil de crédito dos clientes.
-Objetivo do Projeto
+Previsão de Score de Crédito com IA
 
-O objetivo é prever o score de crédito de novos clientes com base em variáveis previamente analisadas, facilitando a tomada de decisões sobre a concessão de crédito.
-Ferramentas e Bibliotecas Utilizadas
+Este projeto utiliza algoritmos de aprendizado de máquina, como Random Forest e K-Nearest Neighbors, para prever o score de crédito de clientes com base em variáveis como profissão, mix de crédito e comportamento de pagamento.
+Bibliotecas usadas:
 
-    pandas: Para manipulação e análise de dados.
-    scikit-learn (sklearn): Para implementação e treino dos modelos de IA.
-        LabelEncoder: Transformação de variáveis categóricas em numéricas.
-        train_test_split: Divisão dos dados em treino e teste.
-        RandomForestClassifier: Modelo de árvore de decisão para classificação.
-        KNeighborsClassifier: Modelo KNN (K-Nearest Neighbors) para classificação.
-        accuracy_score: Avaliação da acurácia dos modelos.
-    Jupyter Notebook ou IDE Python: Para desenvolvimento e execução do projeto.
+    pandas: Manipulação e análise de dados.
+    sklearn: Ferramentas para aprendizado de máquina, incluindo codificação de dados, divisão de treino/teste, classificadores e avaliação de modelos.
 
-Etapas do Projeto
-1. Preparação dos Dados
+Como usar:
 
-    Os dados foram carregados de arquivos CSV contendo informações dos clientes.
-    Colunas categóricas como "profissão", "mix_credito" e "comportamento_pagamento" foram convertidas em valores numéricos utilizando LabelEncoder.
-    A coluna de saída (target) é o score_credito, que foi usada para treinar os modelos.
+    Instale as dependências necessárias:
 
-2. Treinamento dos Modelos de IA
+    pip install pandas scikit-learn
 
-    Dois modelos de IA foram criados:
-        Random Forest: Um modelo baseado em árvores de decisão.
-        KNN (K-Nearest Neighbors): Um modelo que classifica baseado nos vizinhos mais próximos.
-    Os dados foram divididos em 70% para treino e 30% para teste utilizando a função train_test_split.
-    Ambos os modelos foram treinados com os dados de treino e avaliados com os dados de teste.
+    Certifique-se de ter os arquivos CSV (clientes.csv e novos_clientes.csv) com os dados corretos.
+    Execute o script para treinar os modelos e fazer previsões de score de crédito.
 
-3. Avaliação dos Modelos
+Etapas do Processo:
 
-    Após o treino, foi calculada a acurácia dos dois modelos:
-        Random Forest: 82% de acurácia.
-        KNN: 73% de acurácia.
-    O modelo Random Forest demonstrou ser mais eficiente para essa tarefa.
-
-4. Previsão para Novos Clientes
-
-    Após treinar o modelo, utilizamos o Random Forest para prever o score de novos clientes, com base em dados já transformados de profissão, mix de crédito e comportamento de pagamento.
-
-Previsão Gerada:
-
-    Exemplo de previsões geradas para novos clientes:
-        Cliente 1: Score 'Poor'
-        Cliente 2: Score 'Good'
-        Cliente 3: Score 'Standard'
-
-Como Executar o Projeto
-
-    Instale as bibliotecas necessárias:
-
-    bash
-
-pip install pandas scikit-learn
-
-Execute o script Python que faz a leitura dos dados, treino dos modelos, e avaliação das previsões.
-
-Para prever novos clientes, utilize o arquivo CSV de "novos_clientes.csv" e execute o código para ver as previsões de score de crédito.
+    Preparação dos dados:
+        Os dados categóricos de profissão, mix_credito e comportamento_pagamento são convertidos para valores numéricos usando LabelEncoder.
+    Treinamento dos Modelos:
+        Dois modelos são treinados: Random Forest e K-Nearest Neighbors.
+    Avaliação dos Modelos:
+        A acurácia de cada modelo é comparada usando o conjunto de teste.
+    Previsão de Novos Scores:
+        O modelo selecionado faz previsões para novos clientes com base em dados fornecidos.
