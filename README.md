@@ -1,6 +1,7 @@
 Previsão de Score de Crédito com IA
 
 Este projeto utiliza algoritmos de aprendizado de máquina, como Random Forest e K-Nearest Neighbors, para prever o score de crédito de clientes com base em variáveis como profissão, mix de crédito e comportamento de pagamento.
+
 Bibliotecas usadas:
 
     pandas: Manipulação e análise de dados.
