@@ -9,12 +9,12 @@ Este projeto utiliza algoritmos de aprendizado de máquina, como Random Forest e
 
 ### Como usar:
 
-    Instale as dependências necessárias:
+Instale as dependências necessárias:
 
     pip install pandas scikit-learn
 
-    Certifique-se de ter os arquivos CSV (clientes.csv e novos_clientes.csv) com os dados corretos.
-    Execute o script para treinar os modelos e fazer previsões de score de crédito.
+Certifique-se de ter os arquivos CSV (clientes.csv e novos_clientes.csv) com os dados corretos.
+Execute o script para treinar os modelos e fazer previsões de score de crédito.
 
 ### Etapas do Processo:
 
