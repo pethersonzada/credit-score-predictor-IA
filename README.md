@@ -18,17 +18,22 @@ Este projeto utiliza algoritmos de aprendizado de máquina, como Random Forest e
 
 ### Etapas do Processo:
 
-    Preparação dos dados:
+ * Preparação dos dados:
+    
         Os dados categóricos de profissão, mix_credito e comportamento_pagamento são convertidos para valores numéricos usando LabelEncoder.
         
-    Treinamento dos Modelos:
+* Treinamento dos Modelos:
+
         Dois modelos são treinados: Random Forest e K-Nearest Neighbors.
         
-    Avaliação dos Modelos:
+* Avaliação dos Modelos:
+
         A acurácia de cada modelo é comparada usando o conjunto de teste.
         
-    Previsão de Novos Scores:
+* Previsão de Novos Scores:
+
         O modelo selecionado faz previsões para novos clientes com base em dados fornecidos.
+        
 ### Comentário!
 
 Este código foi comentado por mim durante todo o processo de desenvolvimento. Caso algum erro seja encontrado, peço desculpas, pois os comentários refletem apenas minha linha de raciocínio, com o objetivo de tornar o código o mais didático possível.
